@@ -1,4 +1,4 @@
-sudo:required
+sudo: required
 services:
   - docker
 
@@ -6,4 +6,4 @@ before_install:
   - docker build -t kausjethdoc/docker-react -f Dockerfile.dev .
 
 script:
- - docker run kausjethdoc/docker-react npm run test -- --coverage
+  - docker run kausjethdoc/docker-react npm run test -- --coverage
